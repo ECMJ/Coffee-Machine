@@ -32,7 +32,7 @@ ncups = counter
 if ncups == 1:
     print("Yes, I can make that amount of coffee")
 elif ncups > 1:
-    print("Yes, I can make that amount of coffee (and even", ncups,"more than that")
+    print("(and even", ncups, "more than that)")
 else:
     print("No, I can make only",ncups ,"cups of coffee")
 
