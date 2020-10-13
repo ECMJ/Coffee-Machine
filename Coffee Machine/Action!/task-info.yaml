@@ -10,6 +10,7 @@ files:
     CheckResult.correct = lambda: CheckResult(True, '')
     CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
 
+
     class CoffeeMachineTest(StageTest):
         def generate(self) -> List[TestCase]:
             return TestCase.from_stepik(
@@ -89,10 +90,10 @@ files:
             cups = cups[0], cups[-1]
             money = money[0], money[-1]
 
-            if water[0] != 1200 or milk[0] != 540 or beans[0] != 120 or cups[0] != 9 or money[0] != 550:
+            if water[0] != 400 or milk[0] != 540 or beans[0] != 120 or cups[0] != 9 or money[0] != 550:
                 return CheckResult.wrong(
                     "Initial setup is wrong: " +
-                    "coffee machine should fe filled like " +
+                    "coffee machine should be filled like " +
                     "stated in the description"
                 )
 
